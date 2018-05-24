@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="Components\Americano.cs" />
     <Compile Include="Components\Bevarage.cs" />
-    <Compile Include="Components\Capuchino.cs" />
+    <Compile Include="Components\Capuccino.cs" />
     <Compile Include="Components\Espresso.cs" />
     <Compile Include="Components\Latte.cs" />
     <Compile Include="Conditions\ConditionDecorator.cs" />

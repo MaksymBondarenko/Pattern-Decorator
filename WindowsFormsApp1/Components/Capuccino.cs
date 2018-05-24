@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Components
 {
-    public class Capuchino : Bevarage
+    public class Capuccino : Bevarage
     {
-        public Capuchino()
+        public Capuccino()
         {
-            description = "Capuchino";
+            description = "Capuccino";
         }
         public override double cost()
         {
