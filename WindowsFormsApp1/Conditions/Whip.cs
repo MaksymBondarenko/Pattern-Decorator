@@ -20,7 +20,7 @@ namespace WindowsFormsApp1.Conditions
 
         public override string getDescription()
         {
-            return bevarage.getDescription() + "| Whip";
+            return bevarage.getDescription() + " | Whip";
         }
     }
 }

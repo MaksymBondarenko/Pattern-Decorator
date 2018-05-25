@@ -41,10 +41,12 @@ namespace WindowsFormsApp1
             textBox4.Enabled = false;
             textBox5.Enabled = false;
             textBox6.Enabled = false;
+            textBox7.Enabled = false;
             textBox3.Text = "0";
             textBox4.Text = "0";
             textBox5.Text = "0";
             textBox6.Text = "0";
+            textBox7.Text = "0";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -63,6 +65,8 @@ namespace WindowsFormsApp1
                 checkBox4.Checked = false;
                 textBox1.Text = $"{bevarage.getDescription()}";
                 textBox2.Text = $"{bevarage.cost()}";
+                textBox7.Text = $"{bevarage.cost()}";
+
                 buf = 1;
             }
             else if (comboBox1.SelectedIndex == 1)
@@ -73,6 +77,7 @@ namespace WindowsFormsApp1
                 checkBox4.Checked = false;
                 textBox1.Text = $"{bevarage1.getDescription()}";
                 textBox2.Text = $"{bevarage1.cost()}";
+                textBox7.Text = $"{bevarage1.cost()}";
                 buf = 2;
             }
             else if (comboBox1.SelectedIndex == 2)
@@ -83,6 +88,7 @@ namespace WindowsFormsApp1
                 checkBox4.Checked = false;
                 textBox1.Text = $"{bevarage2.getDescription()}";
                 textBox2.Text = $"{bevarage2.cost()}";
+                textBox7.Text = $"{bevarage2.cost()}";
                 buf = 3;
             }
             else if (comboBox1.SelectedIndex == 3)
@@ -93,6 +99,7 @@ namespace WindowsFormsApp1
                 checkBox4.Checked = false;
                 textBox1.Text = $"{bevarage3.getDescription()}";
                 textBox2.Text = $"{bevarage3.cost()}";
+                textBox7.Text = $"{bevarage3.cost()}";
                 buf = 4;
             }
 
@@ -101,19 +108,20 @@ namespace WindowsFormsApp1
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             comboBox2.Enabled = true;
+            comboBox2.Text = "1";
             textBox3.Text = "0,31";
             switch (buf)
             {
                 case 1:
                     if (checkBox1.Checked)
                     {
-                       
                         bevarage = new Mocha(bevarage);
                         textBox1.Text = $"{bevarage.getDescription()}";
                         textBox2.Text = $"{bevarage.cost()}";
                     }
                     else
                     {
+                        comboBox2.Enabled = false;
                         bevarage = new Espresso();
                         textBox1.Text = $"{bevarage.getDescription()}";
                         textBox2.Text = $"{bevarage.cost()}";
@@ -130,6 +138,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox2.Enabled = false;
                         bevarage1 = new Americano();
                         textBox1.Text = $"{bevarage1.getDescription()}";
                         textBox2.Text = $"{bevarage1.cost()}";
@@ -146,6 +155,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox2.Enabled = false;
                         bevarage2 = new Capuccino();
                         textBox1.Text = $"{bevarage2.getDescription()}";
                         textBox2.Text = $"{bevarage2.cost()}";
@@ -161,6 +171,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox2.Enabled = false;
                         bevarage3 = new Latte();
                         textBox1.Text = $"{bevarage3.getDescription()}";
                         textBox2.Text = $"{bevarage3.cost()}";
@@ -174,6 +185,7 @@ namespace WindowsFormsApp1
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             comboBox3.Enabled = true;
+            comboBox3.Text = "1";
             textBox4.Text = "0,35";
             switch (buf)
             {
@@ -186,6 +198,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox3.Enabled = false;
                         bevarage = new Espresso();
                         bevarage = new Mocha(bevarage);
                         textBox1.Text = $"{bevarage.getDescription()}";
@@ -203,6 +216,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox3.Enabled = false;
                         bevarage1 = new Americano();
                         bevarage1 = new Mocha(bevarage1);
                         textBox1.Text = $"{bevarage1.getDescription()}";
@@ -220,6 +234,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox3.Enabled = false;
                         bevarage2 = new Capuccino();
                         bevarage2 = new Mocha(bevarage2);
                         textBox1.Text = $"{bevarage2.getDescription()}";
@@ -237,6 +252,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox3.Enabled = false;
                         bevarage3 = new Latte();
                         bevarage3 = new Mocha(bevarage3);
                         textBox1.Text = $"{bevarage3.getDescription()}";
@@ -251,6 +267,7 @@ namespace WindowsFormsApp1
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             comboBox4.Enabled = true;
+            comboBox4.Text = "1";
             textBox5.Text = "0,40";
             switch (buf)
             {
@@ -263,6 +280,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox4.Enabled = false;
                         bevarage = new Espresso();
                         bevarage = new Mocha(bevarage);
                         bevarage = new Soy(bevarage);
@@ -281,6 +299,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox4.Enabled = false;
                         bevarage1 = new Americano();
                         bevarage1 = new Mocha(bevarage1);
                         bevarage1 = new Soy(bevarage1);
@@ -299,6 +318,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox4.Enabled = false;
                         bevarage2 = new Capuccino();
                         bevarage2 = new Mocha(bevarage2);
                         bevarage2 = new Soy(bevarage2);
@@ -317,6 +337,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox4.Enabled = false;
                         bevarage3 = new Latte();
                         bevarage3 = new Mocha(bevarage3);
                         bevarage3 = new Soy(bevarage3);
@@ -332,6 +353,7 @@ namespace WindowsFormsApp1
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
             comboBox5.Enabled = true;
+            comboBox5.Text = "1";
             textBox6.Text = "0,55";
             switch (buf)
             {
@@ -344,6 +366,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox5.Enabled = false;
                         bevarage = new Espresso();
                         bevarage = new Mocha(bevarage);
                         bevarage = new Soy(bevarage);
@@ -363,6 +386,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox5.Enabled = false;
                         bevarage1 = new Americano();
                         bevarage1 = new Mocha(bevarage1);
                         bevarage1 = new Soy(bevarage1);
@@ -382,6 +406,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox5.Enabled = false;
                         bevarage2 = new Capuccino();
                         bevarage2 = new Mocha(bevarage2);
                         bevarage2 = new Soy(bevarage2);
@@ -401,6 +426,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        comboBox5.Enabled = false;
                         bevarage3 = new Latte();
                         bevarage3 = new Mocha(bevarage3);
                         bevarage3 = new Soy(bevarage3);
@@ -416,5 +442,221 @@ namespace WindowsFormsApp1
 
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (buf)
+            {
+                case 1:
+                    if (comboBox2.SelectedIndex == 0)
+                    {
+                      
+                        textBox2.Text = $"{bevarage.cost() + .31}";
+                    }
+                    else
+                    {
+                        bevarage = new Mocha(bevarage);
+                        textBox2.Text = $"{bevarage.cost()}";
+                    }
+                  break;
+
+                case 2:
+                    if (comboBox2.SelectedIndex == 0)
+                    {
+                        
+                        textBox2.Text = $"{bevarage1.cost() + .31}";
+                    }
+                    else
+                    {
+                       
+                        bevarage1 = new Mocha(bevarage1);
+                        textBox2.Text = $"{bevarage1.cost()}";
+                    }
+                    break;
+                case 3:
+                    if (comboBox2.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage2.cost() + .31}";
+                    }
+                    else
+                    {
+                        bevarage2 = new Mocha(bevarage2);
+                        textBox2.Text = $"{bevarage2.cost()}";
+                    }
+                    break;
+                case 4:
+                    if (comboBox2.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage3.cost() + .31}";
+                    }
+                    else
+                    {
+                        bevarage3 = new Mocha(bevarage3);
+                        textBox2.Text = $"{bevarage3.cost()}";
+                    }
+                  break;
+            }              
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (buf)
+            {
+                case 1:
+                    if (comboBox3.SelectedIndex == 0)
+                    {
+                       
+                        textBox2.Text = $"{bevarage.cost() + .35}";
+                    }
+                    else
+                    {
+                        bevarage = new Soy(bevarage);
+                        textBox2.Text = $"{bevarage.cost()}";
+                    }
+                    break;
+
+                case 2:
+                    if (comboBox3.SelectedIndex == 0)
+                    {
+                       
+                        textBox2.Text = $"{bevarage1.cost() + .35}";
+                    }
+                    else
+                    {
+                        bevarage1 = new Soy(bevarage1);
+                        textBox2.Text = $"{bevarage1.cost()}";
+                    }
+                    break;
+                case 3:
+                    if (comboBox3.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage2.cost() + .35}";
+                    }
+                    else
+                    {
+                        bevarage2 = new Soy(bevarage2);
+                        textBox2.Text = $"{bevarage2.cost()}";
+                    }
+                    break;
+                case 4:
+                    if (comboBox3.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage3.cost() + .35}";
+                    }
+                    else
+                    {
+                        bevarage3 = new Soy(bevarage3);
+                        textBox2.Text = $"{bevarage3.cost()}";
+                    }
+                    break;
+            }
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (buf)
+            {
+                case 1:
+                    if (comboBox4.SelectedIndex == 0)
+                    {
+
+                        textBox2.Text = $"{bevarage.cost() + .40}";
+                    }
+                    else
+                    {
+                        bevarage = new Milk(bevarage);
+                        textBox2.Text = $"{bevarage.cost()}";
+                    }
+                    break;
+
+                case 2:
+                    if (comboBox4.SelectedIndex == 0)
+                    {
+
+                        textBox2.Text = $"{bevarage1.cost() + .40}";
+                    }
+                    else
+                    {
+                        bevarage1 = new Milk(bevarage1);
+                        textBox2.Text = $"{bevarage1.cost()}";
+                    }
+                    break;
+                case 3:
+                    if (comboBox4.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage2.cost() + .40}";
+                    }
+                    else
+                    {
+                        bevarage2 = new Milk(bevarage2);
+                        textBox2.Text = $"{bevarage2.cost()}";
+                    }
+                    break;
+                case 4:
+                    if (comboBox4.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage3.cost() + .40}";
+                    }
+                    else
+                    {
+                        bevarage3 = new Milk(bevarage3);
+                        textBox2.Text = $"{bevarage3.cost()}";
+                    }
+                    break;
+            }
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (buf)
+            {
+                case 1:
+                    if (comboBox5.SelectedIndex == 0)
+                    {
+
+                        textBox2.Text = $"{bevarage.cost() + .55}";
+                    }
+                    else
+                    {
+                        bevarage = new Whip(bevarage);
+                        textBox2.Text = $"{bevarage.cost()}";
+                    }
+                    break;
+
+                case 2:
+                    if (comboBox5.SelectedIndex == 0)
+                    {
+
+                        textBox2.Text = $"{bevarage1.cost() + .55}";
+                    }
+                    else
+                    {
+                        bevarage1 = new Whip(bevarage1);
+                        textBox2.Text = $"{bevarage1.cost()}";
+                    }
+                    break;
+                case 3:
+                    if (comboBox5.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage2.cost() + .55}";
+                    }
+                    else
+                    {
+                        bevarage2 = new Whip(bevarage2);
+                        textBox2.Text = $"{bevarage2.cost()}";
+                    }
+                    break;
+                case 4:
+                    if (comboBox5.SelectedIndex == 0)
+                    {
+                        textBox2.Text = $"{bevarage3.cost() + .55}";
+                    }
+                    else
+                    {
+                        bevarage3 = new Whip(bevarage3);
+                        textBox2.Text = $"{bevarage3.cost()}";
+                    }
+                    break;
+            }
+        }
     }
 }

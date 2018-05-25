@@ -17,3 +17,13 @@ f:\МОЁ\ШАГ\ПРОГРАММИРОВАНИЕ\GIT\PatternDecorator\WindowsFo
 f:\МОЁ\ШАГ\ПРОГРАММИРОВАНИЕ\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 f:\МОЁ\ШАГ\ПРОГРАММИРОВАНИЕ\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 f:\МОЁ\ШАГ\ПРОГРАММИРОВАНИЕ\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+d:\GIT\PatternDecorator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+d:\GIT\PatternDecorator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+d:\GIT\PatternDecorator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+d:\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+d:\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+d:\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+d:\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+d:\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+d:\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+d:\GIT\PatternDecorator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
